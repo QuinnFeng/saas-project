@@ -1,0 +1,439 @@
+@media screen and (max-width:1023px) {
+    [aria-controls="navbarDropdown"]{
+        display: block;
+    }
+
+    [aria-expanded="false"] ~ .navs{
+        display: none;
+    }
+
+    [aria-expanded="true"] ~ .navs{
+        position: absolute;
+        right:0;
+        top:5.5rem;
+        padding:4.5rem 0;
+        background-color: white;
+        width:100%;
+        flex-direction: column;
+        gap: 5rem;
+        justify-content: center;
+        border-top: 1px solid black;
+        /* box-shadow: 0px 0px 20px rgba(52,49,75,0.1); */
+    }
+
+    #topSection{
+        padding-top: 5rem;
+        margin-bottom: 11rem;   
+    }
+
+    .hero-wrapper {
+        padding:2.5rem var(--size-30) 0;
+        grid-template-columns: minmax(18rem,1fr);
+        grid-template-rows: repeat(2,18rem);
+    }
+
+    .hero-wrapper .left-part{
+        grid-column: 1/1 span;
+        align-items: center;
+        padding-bottom: 3.75rem;
+    }
+
+    .hero-wrapper .right-part{
+        grid-column: 1/1 span;
+    }
+
+    .hero-wrapper .left-part div{
+        text-align: center;
+    }
+
+    #google-A{
+        top:13rem;
+        right:26rem;
+    }
+    
+    #google{
+        right:33rem;
+    }
+    
+    #asana{
+        right:6rem;
+    }
+    
+    #atlassian{
+        right:21rem;
+    }
+    
+    #calendar{
+        bottom:0;
+        right:7rem;
+    }
+    
+    #paypal{
+        top: 6rem;
+        right: 32rem;
+    }
+    
+    #weave{
+        top:6rem;
+        right:13rem;
+    }
+    
+    .benefits{
+        grid-template-columns: repeat(2,minmax(20rem,1fr));
+        grid-template-rows: repeat(2,16rem);
+    }
+
+    .banner-section-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        
+    }
+
+    .left-banner{
+        text-align: center;
+        align-items: center;
+        padding: 1.6875rem 1.875rem;
+    }
+        
+    .right-banner{
+        padding-top: var(--size-16);
+    }  
+
+    .right-banner img{
+        height: 22rem;
+    }
+
+    .hub-spot{
+        grid-template-columns:1fr;
+        grid-template-rows: 35rem auto;
+        gap:0;
+    }
+
+    .women-three{
+        right: calc(50% - 11.5rem);
+    }
+
+    .dots{
+        right:calc(50% + 1.5rem);
+    }
+
+    .hub-spot .right-part{
+        grid-template-rows: auto auto;
+        padding-right: 0;
+    }
+
+    .hub-spot .right-part .description{
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .title{
+        align-items: center;
+    }
+
+    .brands{
+        margin-top: 2.5rem;
+        padding-top: 2.5rem;
+    }
+
+    .plans-features-list{
+        grid-template-columns: repeat(2,minmax(20rem,1fr));
+        grid-template-rows: auto auto;
+    }
+
+    .plan{
+        grid-column: 1/2 span;
+    }
+
+    .plan-features{
+        grid-column: 1/2 span;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .plan-footer,.plan-header{
+        align-items: center;
+    }
+
+    .plan-header .price-note {
+        align-self: flex-start;
+    }
+
+    #hire-us-section .container{
+        grid-template-columns: minmax(20rem,1fr);
+        grid-template-rows: auto auto;
+    }
+
+    #hire-us-section .left-part{
+        display: grid;
+        grid-template-rows: 15rem;
+        grid-template-columns:24rem 12rem;  
+        padding:var(--size-40) var(--size-30) var(--size-20);
+        gap: 3.75rem;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .top hr{
+        width: 100%;
+    }
+
+    .hire-us{
+        width: 100%;
+    }
+
+    .frame-1{
+        align-self: flex-start;
+    }
+
+    .navigation{
+        grid-template-columns: repeat(2,minmax(12rem,1fr));
+        grid-template-rows: 12rem 12rem;
+        /* justify-self:center; */
+    }
+}
+
+@media (min-width:360px) and (max-width: 767px) {
+
+    .navbar-nav{
+        flex-direction: column;
+        justify-content: center;
+        gap:var(--size-20);
+    }
+
+    .nav-link a{
+        margin-right: 0;
+    }
+
+    #topSection{
+        padding: 4rem 0 0;
+    }
+
+    .hero-header{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-header br{
+        display: none;
+    }
+
+    .hero-header p{
+        width: 22rem;
+        font-size: var(--size-18);
+    }
+
+    .hero-wrapper{
+        padding-left: var(--size-16);
+        padding-right:var(--size-16);
+    }
+
+    #google-A{
+        right:50%;
+    }
+    
+    #google{
+        right:calc(95% - 3.5rem);
+    }
+    
+    #asana{
+        right:0;
+    }
+    
+    #atlassian{
+        right:41%;
+    }
+    
+    #calendar{
+        right:var(--size-10);
+    }
+    
+    #paypal{
+        right: calc(95% - 5.5rem);
+    }
+
+    #weave{
+        right:27%;
+    }
+ 
+    .key-benefits{
+        padding: var(--size-40) 0;
+        
+    }
+
+    .benefits{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,16rem);
+    }
+
+    .banner-section-content{
+        padding: 0 1rem 2rem;
+        grid-template-rows: 12rem 20rem;
+    }
+
+    .why-front p {
+        width: 20rem;
+    }
+
+    .bullets-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,var(--size-50));
+        padding: 0 2.125rem 0 20%;
+        gap:var(--size-20);
+        height: auto;
+        margin-top: 2.5rem;
+    }
+
+    .point{
+        flex-direction: row;
+        gap:3rem;
+        justify-content: flex-start;
+        font-size: 1rem;
+    }
+
+    .airplane{
+        /* justify-content: flex-start; */
+        width:unset;
+    }
+
+    .line{
+        display: none;
+    }
+
+    #why-front-section{
+        padding-bottom: 3.75rem;
+    }
+
+    .banner-play{
+        padding: 0 0 var(--size-40) 0;
+    }
+
+    .hub-spot{
+        grid-template-rows: 24rem auto;
+    }
+
+    .women-three{
+        right:calc(42% - 8rem);
+        width: 16rem;
+        height: 18rem;
+    }
+
+    .dots{
+        right:calc(42% + 1.9rem);
+        width: 8.4rem;
+        height: 16.8rem;
+        top: 4.2rem;
+    }
+
+    .brand-images{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        justify-content: center;
+        padding: 0 var(--size-30);
+        gap:1.25rem;
+    }
+
+    .brands{
+        padding-bottom: var(--size-60);
+    }
+
+    .plans-features-list{
+        grid-template-columns: 1fr;
+        padding: 0 var(--size-16) var(--size-60);
+    }
+
+    .plan{
+        grid-column:1/1 span;   
+    }
+
+    .price-note p{
+        width:15rem;
+    }
+
+    .plan-features{
+        grid-column: 1/1 span;
+        grid-template-columns:1fr;
+        padding: 0 var(--size-50);
+    }
+
+    .plan-feature{
+        padding: var(--size-20) 0;
+    }
+
+    #pricing-section{
+        padding-bottom: 0;
+    }
+
+    #hire-us-section .left-part{
+        grid-column: 1/1 span;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        width: 100%;
+    }
+
+    .left-part .top,.left-part .bottom{
+        grid-column: 1/1 span;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hire-us,.phrase,.bottom .title{
+        text-align: center;
+    }
+
+    #hire-us-section .right-part{
+        padding: var(--size-30) 1rem;
+    }
+
+    .form-group{
+        grid-template-columns: 1fr;
+    }
+
+    .policy :nth-child(2){
+        display: none;
+    }
+
+    .frame-1{
+        display: grid;
+        width: 100%;
+        grid-template-columns: minmax(23rem,1fr);
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation{
+        grid-column: 1/1 span;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .info{
+        grid-column: 1/1 span;
+        text-align: center;
+    }
+
+    .company{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frame-2 .top{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .frame-2 .top p{
+        margin-right: unset;
+    }
+
+    .footer-text{
+        width: 20rem;
+    }
+
+}
